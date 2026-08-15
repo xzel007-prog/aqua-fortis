@@ -1,0 +1,310 @@
+body{
+    box-sizing: border-box;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+header{
+    background-color: #606B71;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px 30px;
+}
+
+.logo{
+    width: 250px;
+}
+
+.logo img{
+    width: 70px;
+    object-fit: contain;
+}
+
+.anchor{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.anchor a{
+    text-decoration: none;
+    color: #ffff;
+    font-size: 1rem;
+
+}
+
+.anchor a:hover,
+.anchor a:active{
+    color: #7dc6ce;
+}
+
+.talk{
+    color: #ffff;
+    cursor: pointer;
+}
+
+.talk:hover,
+.talk:active{
+    color: #7dc6ce;
+}
+
+/* HERO */
+
+.hero-1{
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow: hidden;
+    gap: 20px;
+    padding: 30px 50px;
+    background-color: #606B71;
+}
+
+
+.hero-1 img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.writing{
+    padding: 0 30px;
+    color: #ffff;
+}
+
+.writing h2{
+    font-size: bold;
+
+}
+
+.writing p{
+    font-size: 0.8rem;
+    line-height: 1.5;
+}
+
+.location{
+    display: flex;
+    flex: 1;
+    background-color: #ffff;
+    padding: 2px;
+}
+
+.location input{
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    padding: 5px;
+}
+
+.location input::placeholder{
+    font-size: 1.2rem;
+}
+.ltalk{
+    margin: 0;
+    background-color: #7FB79D;
+    padding: 8px 20px;
+}
+
+    /* STATISTIC SECTION */
+.stats-section{
+    max-width: 100%;
+    padding: 40px 40px;
+    text-align: center;
+}
+
+.stats-heading{
+    font-weight: 700;
+    font-size: 2.2rem;
+    color: #2d2d2d;
+    line-height: 1.3;
+    margin-bottom: 50px;
+}
+
+.stats-grid{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+    
+}
+
+.stats-item{
+    flex: 1;
+    max-width: 100%;
+}
+
+.stat-number{
+    display: block;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: #1a1a1a;
+    margin: 0;
+}
+
+.stat-label{
+    font-size: 0.8rem;
+    margin: 0;
+}
+
+
+.meeting{
+    max-width: 100%;
+    height: 400px;
+    overflow-y: hidden;
+    padding: 0 45px;
+
+}
+
+.Bmeet{
+    width: 100%;
+    height: auto;
+    display: block;    
+}
+
+.theme{
+    max-width: 100%;
+    text-align: center;
+    padding: 20px;
+
+}.theme-p{
+    font-size: 1.5rem;
+    color: #2d2d2d;
+    font-weight: 900;
+    line-height: 1.4;
+    margin: 0;
+}
+ /* PROFILE SECTION */
+.comment-grid{
+    max-width: 100%;
+    /* height: 300px; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow: hidden;
+    gap: 30px;
+    padding: 45px;
+}
+
+.comment-grid.reverse .comment{
+  order:2;
+}
+
+.comment-grid.reverse .comment-img{
+  order:1
+}
+
+.title{
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2d2d2d;
+    line-height: 35px;
+
+}
+
+.title-comment{
+    font-size: 0.8rem;
+    line-height: 1.5;
+}
+
+.talkb{
+    background-color: #7FB79D;
+    padding: 8px 20px;
+    display: inline-block;
+    line-height: 15px;
+}
+
+.img-comment{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+/* PROFILE SECTION 2 */
+.meet{
+    max-width: 100%;
+    padding: 0 45px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.meet-h3,
+.meet-p3{
+    line-height: 1.5;
+}
+
+.meet-h3{
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+.pictures{
+    max-width: 100%;
+    padding: 0 45px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+.picture-1{
+    display: flex;
+    flex-direction: column;
+    /* e.g. */
+    text-align: center;
+    
+}
+
+.pic-1{
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+}
+
+.more-1{
+    max-width: 100%;
+    padding: 0 45px;
+    text-align: center;
+}
+
+footer{
+    background-color: #102023;
+    color: #9EA4A5;
+     max-width: 100%;
+    padding: 20px 70px;
+    
+}
+
+.foot-1{
+    display: flex;
+    flex: 1;
+    max-width: 100%;
+}
+
+.social-s{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.social-s a{
+    text-decoration: none;
+    color: #ffff;
+    font-size: 1rem;
+
+}
+
+.social-s a:hover,
+.social-s a:active{
+    color: #7dc6ce;
+}
+
+.column{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}

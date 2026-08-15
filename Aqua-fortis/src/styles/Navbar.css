@@ -1,0 +1,128 @@
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    flex-wrap: wrap;
+    background-color: #FFFFFF;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar-logo img{
+    width: 200px;
+    height: auto;
+}
+
+.navbar-core-values {
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.core-value-item {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+}
+
+.core-value-icon, .core-value-title, .core-value-label {
+    margin:0;
+    padding:5px;
+}
+
+.core-value-icon svg {
+    width: 25px;
+    height: 25px;
+    color: #1a4d3e;
+}
+
+.core-value-title {
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #152c1c;
+    text-align:center;
+}
+
+.core-value-label{
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #9AA19B;
+    text-align:center;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.navbar-course{
+    padding:5px 25px;
+    font-size: 0.7rem;
+    font-weight:bold;
+    letter-spacing:2px;
+    color: #D4A541;
+    background-color: #146328;
+    cursor: pointer;
+}
+
+.navbar-hamburger {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #1a4d3e;
+    padding:8px;
+}
+
+.mobile-menu {
+    display: none;
+}
+@media (max-width: 768px) {
+    .navbar-core-values {
+        display: none;      /* hide core values on mobile */
+    }
+
+    .navbar-hamburger {
+        display: block;     /* show hamburger on mobile */
+    }
+
+    .navbar {
+        padding: 20px 24px; /* less padding on small screens */
+        flex-wrap: wrap;
+    }
+    .mobile-menu {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color: #ffffff;
+        padding: 16px 24px;
+        gap: 12px;
+        border-top: 1px solid #eee;
+    }
+
+    .mobile-menu-link {
+        text-decoration: none;
+        color: #152c1c;
+        font-weight: 600;
+        letter-spacing: 1px;
+    }
+    .mobile-menu-course {
+        padding: 10px 20px;
+        font-size: 0.8rem;
+        font-weight: bold;
+        letter-spacing: 2px;
+        color: #D4A541;
+        background-color: #146328;
+        border: none;
+        cursor: pointer;
+        align-self: flex-start;
+    }
+}
