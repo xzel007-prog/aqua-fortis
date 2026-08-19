@@ -1,4 +1,4 @@
-import "./Industries.css";
+import "../styles/Industries.css";
 
 const sectors = [
   {
@@ -84,3 +84,4 @@ function Industries() {
 }
 
 export default Industries;
+
