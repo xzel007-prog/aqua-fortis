@@ -1,5 +1,5 @@
 import heroImg from '../assets/10001.png';
-import '../App.css';
+import '../styles/Facilities.css';
 
 function Facilities() {
   return (
@@ -34,29 +34,29 @@ function Facilities() {
 
 function Hero() {
   return (
-    <div className="center mb-16 relative isolate bg-cover bg-center bg-no-repeat overflow-hidden bg-green-950 text-white sm:py-12 lg:overflow-visible lg:px-0 lg:pt-10">
-      <div className="hero">
+    <div className="facilities-hero">
+      <div className="facilities-hero-image">
         <img
           src={heroImg}
-          className="base absolute inset-0 h-full w-full object-cover"
+          className="facilities-hero-image-base"
           width="170"
           height="179"
           alt=""
         />
       </div>
 
-      <div className="absolute inset-0 bg-gradient-to-r from-green-950/98 to-green-900/50"></div>
+      <div className="facilities-hero-overlay"></div>
 
-      <div className="container-site relative flex flex-col items-start min-h-[42vh] px-45 pb-5 pt-14 sm:min-h-38vh] sm:pd-16">
-        <span className="small-text text-sm text-[#CFD8D2] uppercase font-semibold tracking-wider mb-2">
+      <div className="facilities-hero-content">
+        <span className="facilities-eyebrow">
           our facilities
         </span>
 
-        <h2 className="section-header text-5xl max-w-4xl font-semibold leading-tight mb-8">
+        <h1 className="facilities-hero-title">
           Training centres built around real workplace competence.
-        </h2>
+        </h1>
 
-        <p className="section-text text-[#C3CEC6] text-lg max-w-3xl tracking-wide">
+        <p className="facilities-hero-description">
           Like leading Port Harcourt safety academies, Aqua Fortis delivers
           through a dedicated training hub, in-plant deployment capacity, and
           emergency/survival pathways—including partner facilities where
@@ -69,24 +69,24 @@ function Hero() {
 
 function About(props) {
   return (
-    <div className="facilities-text-box grid grid-cols-4 gap-10 px-50 py-12 items-center">
-      <h3 className="facilities-title text-2xl font-black text-[#1F8F36]">
+    <div className="facilities-text-box">
+      <h3 className="facilities-title">
         {props.title}
       </h3>
 
-      <div className="description-text-box col-span-2">
-        <p className="facilities-description text-base mb-5 text-[#5C5C5C] tracking-wide">
+      <div className="description-text-box">
+        <p className="facilities-description">
           {props.description}
         </p>
 
-        <p className="facilities-small-text text-[#1F8F36] text-base tracking-normal">
+        <p className="facilities-small-text">
           {props.smallText}
         </p>
       </div>
 
       <a
         href="#"
-        className="facilities-link ml-20 bg-[#1F8F36] text-white max-w-30 text-center text-base px-2 py-3 rounded-sm hover:bg-[#135a21]"
+        className="facilities-link"
       >
         {props.link}
       </a>
@@ -96,20 +96,20 @@ function About(props) {
 
 function Contact() {
   return (
-    <div className="contact mt-5 px-35 py-30">
-      <div className="contact-section flex gap-5">
+    <div className="contact">
+      <div className="contact-section">
         <div className="contact-head-text">
-          <span className="contact-small-text text-[#D4451F] text-sm uppercase font-bold">
+          <span className="contact-small-text">
             quality focus
           </span>
 
-          <h3 className="contact-title text-[#0D3D1A] text-4xl max-w-lg font-black mt-4 leading-tight">
+          <h3 className="contact-title">
             Training without compromise.
           </h3>
         </div>
 
-        <div className="contact-text-box text-[#5C5C5C] text-base max-w-2xl tracking-normal">
-          <p className="contact-text mb-5">
+        <div className="contact-text-box">
+          <p className="contact-text contact-text-first">
             Programme titles reflect Aqua Fortis training offerings as
             published in our corporate profile. Where international frameworks
             (such as NEBOSH or ASNT pathways) are referenced historically,
@@ -117,7 +117,7 @@ function Contact() {
             are confirmed per cohort.
           </p>
 
-          <p className="contact-text mb-13">
+          <p className="contact-text contact-text-second">
             Visit or write to us in Port Harcourt to discuss classroom
             capacity, practical drill arrangements, and corporate cohort
             scheduling.
@@ -125,7 +125,7 @@ function Contact() {
 
           <a
             href="#"
-            className="contact-link text-[#1F8F36] text-base border-gray-300 border-1 px-8 py-4 rounded-sm hover:bg-[#1F8F36] hover:text-white"
+            className="contact-link"
           >
             Contact the training team
           </a>
