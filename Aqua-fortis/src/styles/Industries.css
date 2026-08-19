@@ -1,0 +1,211 @@
+
+* {
+  box-sizing: border-box;
+}
+ 
+body,
+.page {
+  margin: 0;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #ffffff;
+}
+ 
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 13px;
+  font-weight: 700;
+  margin: 0 0 14px;
+    color: #cfe7d7;
+}
+ 
+.eyebrow--light {
+  color: #cfe7d7;
+} 
+/* Hero */
+.hero {
+  position: relative;
+  padding: 206px 32px 72px;
+  background-color: #167729;
+  background-image: url(../assets//industrial-plant.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: left;
+  z-index: 1;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(22, 104, 22, 0.75);
+  z-index: 1;
+}
+
+.hero-inner {
+  max-width: 760px;
+  position: relative;
+  z-index: 2;
+  padding: 0 60px;
+}
+ 
+.hero h1 {
+  margin: 0 0 20px;
+  color: #ffffff;
+  font-size: 44px;
+  line-height: 1.15;
+  font-weight: 700;
+}
+ 
+.hero-sub {
+  margin: 0;
+  color: #e4ede6;
+  font-size: 20px;
+  line-height: 1.6;
+  max-width: 620px;
+}
+
+ 
+/* Sector grid */
+.sectors {
+  padding: 64px 32px 80px;
+}
+ 
+.sectors-grid {
+  max-width: 1180px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 64px;
+}
+ 
+.sector {
+  padding: 48px 0;
+  border-top: 2px solid #e3e3dc;
+}
+ 
+.sector--full {
+  grid-column: 1 / 2;
+}
+ 
+.sector h3 {
+  margin: 0 0 12px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #1f6b3a;
+  text-align: left;
+}
+ 
+.sector p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.55;
+  color: #3f4b44;
+  max-width: 46ch;
+  text-align: left;
+}
+ 
+/* CTA banner */
+.cta {
+  background: #167729;
+  padding: 48px 32px;
+  text-align: left;
+}
+ 
+.cta-inner {
+  max-width: 640px;
+  margin: 0 auto;
+}
+ 
+.cta h2 {
+  margin: 0 0 18px;
+  color: #ffffff;
+  font-size: 34px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+ 
+.cta-sub {
+  margin: 0 0 32px;
+  color: #dcece0;
+  font-size: 16px;
+  line-height: 1.6;
+  max-width: 560px;
+}
+ 
+.cta-actions {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+ 
+.btn {
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 14px 26px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.15s ease, border-color 0.15s ease;
+}
+ 
+.btn--primary {
+  background: #e2622b;
+  border: 1px solid #e2622b;
+  color: #ffffff;
+}
+ 
+.btn--primary:hover {
+  background: #cc5423;
+  border-color: #cc5423;
+}
+ 
+.btn--outline {
+  background: transparent;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+}
+ 
+.btn--outline:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+ 
+@media (max-width: 720px) {
+  html {
+  overflow-x: hidden;
+  }
+  .hero {
+    padding: 64px 20px 48px;
+  }
+ 
+  .hero h1 {
+    font-size: 32px;
+  }
+ 
+  .sectors {
+    padding: 48px 60px 56px;
+    text-align: left;
+  }
+ 
+  .sectors-grid {
+    grid-template-columns: 1fr;
+    column-gap: 0;
+  }
+ 
+  .sector--full {
+    grid-column: auto;
+  }
+ 
+  .cta {
+    padding: 56px 20px;
+  }
+ 
+  .cta h2 {
+    font-size: 26px;
+  }
+}
+ 
