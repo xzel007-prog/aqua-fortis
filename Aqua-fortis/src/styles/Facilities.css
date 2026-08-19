@@ -1,0 +1,241 @@
+:root {
+	--facilities-green: #1f8f36;
+	--facilities-green-dark: #135a21;
+	--facilities-deep-green: #0d3d1a;
+	--facilities-muted-green: #c3cec6;
+	--facilities-light-green: #cfd8d2;
+	--facilities-text: #5c5c5c;
+	--facilities-accent: #d4451f;
+}
+
+.facilities-hero {
+	position: relative;
+	isolation: isolate;
+	min-height: 42vh;
+	margin-bottom: 4rem;
+	overflow: hidden;
+	color: #fff;
+	background: #052e16 center / cover no-repeat;
+}
+
+.facilities-hero-image,
+.facilities-hero-overlay {
+	position: absolute;
+	inset: 0;
+}
+
+.facilities-hero-image-base {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.facilities-hero-overlay {
+	background: linear-gradient(90deg, rgb(5 46 22 / 98%), rgb(20 83 35 / 50%));
+}
+
+.facilities-hero-content {
+	position: relative;
+	display: flex;
+	min-height: 42vh;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 3.5rem 1.25rem 1.25rem;
+}
+
+.facilities-eyebrow {
+	margin-bottom: 0.5rem;
+	color: var(--facilities-light-green);
+	font-size: 0.875rem;
+	font-weight: 600;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+}
+
+.facilities-hero-title {
+	max-width: 56rem;
+	margin: 0 0 2rem;
+	font-size: 3rem;
+	font-weight: 600;
+	line-height: 1.25;
+}
+
+.facilities-hero-description {
+	max-width: 48rem;
+	margin: 0;
+	color: var(--facilities-muted-green);
+	font-size: 1.125rem;
+	letter-spacing: 0.025em;
+	line-height: 1.5;
+}
+
+.facilities-text-box {
+	display: grid;
+	grid-template-columns: 1fr;
+	align-items: center;
+	gap: 2rem;
+	padding: 3rem 1.25rem;
+}
+
+.facilities-title {
+	margin: 0;
+	color: var(--facilities-green);
+	font-size: 1.5rem;
+	font-weight: 900;
+	line-height: 1.25;
+}
+
+.description-text-box,
+.contact-head-text,
+.contact-text-box {
+	min-width: 0;
+}
+
+.facilities-description {
+	margin: 0 0 1.25rem;
+	color: var(--facilities-text);
+	font-size: 1rem;
+	letter-spacing: 0.025em;
+	line-height: 1.5;
+}
+
+.facilities-small-text {
+	margin: 0;
+	color: var(--facilities-green);
+	font-size: 1rem;
+}
+
+.facilities-link {
+	display: inline-block;
+	justify-self: start;
+	max-width: max-content;
+	padding: 0.75rem 1rem;
+	border-radius: 0.125rem;
+	color: #fff;
+	background-color: var(--facilities-green);
+	text-align: center;
+	text-decoration: none;
+	transition: background-color 150ms ease;
+}
+
+.facilities-link:hover {
+	background-color: var(--facilities-green-dark);
+}
+
+.contact {
+	margin-top: 1.25rem;
+	padding: 4rem 1.25rem;
+}
+
+.contact-section {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+.contact-small-text {
+	color: var(--facilities-accent);
+	font-size: 0.875rem;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.contact-title {
+	max-width: 32rem;
+	margin: 1rem 0 0;
+	color: var(--facilities-deep-green);
+	font-size: 2.25rem;
+	font-weight: 900;
+	line-height: 1.25;
+}
+
+.contact-text-box {
+	max-width: 42rem;
+	color: var(--facilities-text);
+	font-size: 1rem;
+	line-height: 1.5;
+}
+
+.contact-text {
+	margin-top: 0;
+}
+
+.contact-text-first {
+	margin-bottom: 1.25rem;
+}
+
+.contact-text-second {
+	margin-bottom: 3rem;
+}
+
+.contact-link {
+	display: inline-block;
+	padding: 1rem 2rem;
+	border: 1px solid #d1d5db;
+	border-radius: 0.125rem;
+	color: var(--facilities-green);
+	text-decoration: none;
+	transition: color 150ms ease, background-color 150ms ease;
+}
+
+.contact-link:hover {
+	color: #fff;
+	background-color: var(--facilities-green);
+}
+
+@media (min-width: 640px) {
+	.facilities-hero {
+		min-height: 38vh;
+		padding-top: 3rem;
+	}
+
+	.facilities-hero-content {
+		min-height: 38vh;
+		padding: 4rem 2.5rem;
+	}
+
+	.facilities-text-box,
+	.contact {
+		padding-right: 2.5rem;
+		padding-left: 2.5rem;
+	}
+}
+
+@media (min-width: 768px) {
+	.facilities-text-box {
+		grid-template-columns: repeat(4, minmax(0, 1fr));
+		gap: 2.5rem;
+	}
+
+	.description-text-box {
+		grid-column: span 2;
+	}
+
+	.facilities-link {
+		justify-self: end;
+	}
+
+	.contact-section {
+		flex-direction: row;
+		gap: 2.5rem;
+	}
+}
+
+@media (min-width: 1024px) {
+	.facilities-hero-content {
+		padding-right: 5rem;
+		padding-left: 5rem;
+	}
+
+	.facilities-text-box,
+	.contact {
+		padding-right: 5rem;
+		padding-left: 5rem;
+	}
+
+	.contact {
+		padding-top: 6rem;
+		padding-bottom: 6rem;
+	}
+}
