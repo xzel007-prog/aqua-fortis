@@ -1,0 +1,147 @@
+:root {
+          --deep-sea: #0a2a3d;
+          --teal: #14707a;
+          --brass: #c79a46;
+          --foam: #f3f1ea;
+          --foam-dim: #e7e2d5;
+          --ink: #16211f;
+        }
+
+        .af-page {
+          font-family: 'Work Sans', sans-serif;
+          color: var(--ink);
+          background: var(--foam);
+        }
+        .af-page * { box-sizing: border-box; }
+
+        .hero-image {
+          width: 100%;
+          height: 100%;
+          background-size: cover;
+          background-position: center;
+          }
+
+        .af-eyebrow {
+          font-family: 'IBM Plex Mono', monospace;
+          font-size: 0.72rem;
+          letter-spacing: 0.14em;
+          text-transform: uppercase;
+          color: var(--brass);
+          display: inline-block;
+        }
+        .af-eyebrow--dark { color: var(--teal); }
+
+        /* ---------- Hero ---------- */
+        .af-hero {
+          position: relative;
+          height: 88vh;
+          min-height: 480px;
+          overflow: hidden;
+          background: var(--deep-sea);
+        }
+        .af-hero-slide {
+          position: absolute;
+          inset: 0;
+          background-size: cover;
+          background-position: center;
+          opacity: 0;
+          transform: scale(1.06);
+          transition: opacity 1.1s ease, transform 6s ease;
+        }
+        .af-hero-slide.is-active {
+          opacity: 1;
+          transform: scale(1);
+        }
+        .af-hero-scrim {
+          position: absolute;
+          inset: 0;
+          background: linear-gradient(0deg, rgba(10,42,61,0.88) 0%, rgba(10,42,61,0.25) 45%, rgba(10,42,61,0.15) 100%);
+        }
+        .af-hero-content {
+          position: absolute;
+          left: 6%;
+          bottom: 14%;
+          max-width: 560px;
+          color: var(--foam);
+        }
+        .af-hero-title {
+          font-family: 'Fraunces', serif;
+          font-weight: 600;
+          font-size: clamp(1.9rem, 4.2vw, 3.1rem);
+          line-height: 1.08;
+          margin: 0.5rem 0 0.75rem;
+        }
+        .af-hero-caption {
+          font-size: 1rem;
+          opacity: 0.85;
+          max-width: 440px;
+          margin: 0;
+        }
+
+        .af-hero-direction{
+          display: inline-block;
+          padding: 15px 20px;
+          background-color: #c79a46;
+          color: brown;
+          text-decoration: none;
+          font-weight: bold;
+          transition: background-colour 0.3s ease;
+          margin-top: 10px;
+          border-radius: 8px;
+        }
+
+        .af-hero-direction:hover {
+        background-color: #5a6e84;
+        color: #ffffff;
+        transform: scale(1.05);
+        }
+        
+
+        .af-hero-arrow {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          width: 44px;
+          height: 44px;
+          border-radius: 50%;
+          border: 1px solid rgba(243,241,234,0.4);
+          background: rgba(10,42,61,0.35);
+          color: var(--foam);
+          font-size: 1.6rem;
+          line-height: 1;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transition: background 0.2s ease, border-color 0.2s ease;
+        }
+        .af-hero-arrow:hover {
+          background: rgba(199,154,70,0.85);
+          border-color: var(--brass);
+        }
+
+        .af-hero-arrow--prev { left: 4%; }
+        .af-hero-arrow--next { right: 4%; }
+
+        .af-hero-drops {
+          position: absolute;
+          right: 6%;
+          bottom: 12%;
+          display: flex;
+          gap: 10px;
+        }
+        .af-drop {
+          width: 10px;
+          height: 13px;
+          border-radius: 50% 50% 50% 0;
+          transform: rotate(45deg);
+          background: rgba(243,241,234,0.35);
+          border: none;
+          cursor: pointer;
+          padding: 0;
+          transition: background 0.25s ease, transform 0.25s ease;
+        }
+        .af-drop.is-active {
+          background: var(--brass);
+          transform: rotate(45deg) scale(1.25);
+        }

@@ -1,0 +1,130 @@
+
+/* ===== Training Gallery Grid ===== */
+.train-gac-h2 {
+    font-family: 'Fraunces', serif;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #16211f;
+    text-align: center;
+    margin: 0 0 40px;
+    padding-top: 60px;
+}
+
+.trainig-gac-1 {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.trainig-gac-1:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+}
+
+.trainig-gac-1 img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.training-title-1 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #16211f;
+    margin: 16px 20px 8px;
+}
+
+.training-descrp-1 {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #555555;
+    margin: 0 20px 20px;
+}
+
+/* Container for all the cards (add this className to your .map() wrapper) */
+.training-gac-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+    padding: 0 5% 60px;
+}
+
+@media (max-width: 900px) {
+    .training-gac-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .training-gac-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ===== Training Lane (CTA with background image) ===== */
+.training-lane {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    padding: 80px 5%;
+    text-align: center;
+    overflow: hidden;
+}
+
+/* Blurred, darkened image layer */
+.training-lane::before {
+    content: "";
+    position: absolute;
+    inset: -20px; /* slightly oversized so blurred edges don't show gaps */
+    background-image: inherit;
+    background-size: cover;
+    background-position: center;
+    filter: blur(6px) brightness(0.5);
+    z-index: 1;
+}
+
+/* Sharp dark overlay on top of the blur, for extra text contrast */
+.training-lane-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(1, 1, 1, 0.5);
+    z-index: 2;
+}
+
+/* Text content sits above both layers */
+.training-lane-content {
+    position: relative;
+    z-index: 3;
+    max-width: 640px;
+    margin: 0 auto;
+    color: #ffffff;
+}
+
+.training-lane-eyebrow {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.8rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #c79a46;
+    margin-bottom: 12px;
+}
+
+.training-lane-title {
+    font-family: 'Fraunces', serif;
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin: 0 0 16px;
+    line-height: 1.2;
+}
+
+.training-lane-text {
+    font-size: 1rem;
+    line-height: 1.7;
+    opacity: 0.9;
+    margin: 0 0 28px;
+}

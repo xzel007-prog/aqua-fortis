@@ -1,0 +1,99 @@
+
+.o-story {
+    color: #d2952d;
+    font-size: 0.8rem;
+    font-style: italic;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.profilesection {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 60px 5%;
+}
+.our-profile {
+    flex: 1;
+}
+
+
+.o-profile {
+    font-size: 1.3rem;
+    color: #060606;
+    font-weight: bold;
+    font-family: Cambria, 'Times New Roman', serif;
+    letter-spacing: 0.05em;
+    margin-bottom: 16px;
+}
+
+.o-descript {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 1.7;
+    color: #333333;
+    margin-bottom: 24px;
+}
+
+.e-courses {
+    padding: 14px 28px;
+    display: inline-block;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: opacity 0.3s ease, transform 0.2s ease;
+    margin-right: 12px;
+
+}
+
+.e-courses:hover {
+    opacity: 0.85;
+    transform: translateY(-2px);
+}
+
+
+
+.e-courses {
+    background-color: #d2952d;
+}
+
+.ph-tx-list {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    padding: 24px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0,06);
+}
+
+.ph-tx-items {
+    padding: 16px;
+    background-color: #f8f8f6;
+    /* color: #060606; */
+    border-left: 3px solid #108b85;
+    border-radius: 4px;
+}
+
+.ph-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #060606;
+    margin: 00 4px;
+}
+
+.ph-description {
+    font-size: 0.85rem;
+    color: #555555;
+    margin: 0;
+    line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+    .profilesection {
+        flex-direction: column;
+        padding: 40px 20px;
+    }
+}
