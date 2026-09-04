@@ -1,4 +1,5 @@
 
+
 import HeroCarousel from "../components/Hero.jsx"
 import FocusSection from "../components/Focus.jsx";
 import FacilitiesGallery from "../components/FacGallery.jsx";
@@ -19,8 +20,8 @@ function Home (){
             <ProfileSection />
             <TrainingGallery />
             <UpdateGallery />
+
         </section>
     )
 }
-
-export default Home
+export default Home;

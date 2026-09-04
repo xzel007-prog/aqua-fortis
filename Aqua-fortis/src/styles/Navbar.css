@@ -6,7 +6,6 @@
     padding: 20px 60px;
     flex-wrap: wrap;
     background-color: #FFFFFF;
-    position: sticky;
     top: 0;
     z-index: 100;
 }
@@ -102,7 +101,7 @@
         display: flex;
         flex-direction: column;
         width: 100%;
-        background-color: #ffffff;
+        background-color: #052a04;
         padding: 16px 24px;
         gap: 12px;
         border-top: 1px solid #eee;
@@ -110,19 +109,35 @@
 
     .mobile-menu-link {
         text-decoration: none;
-        color: #152c1c;
+        color: #ffffff;
         font-weight: 600;
         letter-spacing: 1px;
+        padding: 10px;
+        transition: color 0.3s ease;
     }
+
+    .mobile-menu-link:hover{
+        color: #D4A541;
+        background-color: #146328;
+    }
+
     .mobile-menu-course {
         padding: 10px 20px;
         font-size: 0.8rem;
         font-weight: bold;
         letter-spacing: 2px;
-        color: #D4A541;
-        background-color: #146328;
+        color: #ffffff;
+        background-color:  #c79a46;;
         border: none;
         cursor: pointer;
-        align-self: flex-start;
+        align-self: stretch;
+        width: 100%;
+        transition: background-color 0.25s ease;
+        box-sizing: border-box;
     }
+
+    .mobile-menu-course:hover {
+        background-color: #b0883a;
+    }
+         
 }
